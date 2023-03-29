@@ -1,0 +1,88 @@
+[2023-03-29 12:24:07] [javac-output-25664] warning: [options] bootstrap class path not set in conjunction with -source 8
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobotThreadManager.java:21: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessController;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\JavaHost.java:30: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessControlException;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\proxies\AdvancedRobotProxy.java:19: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessControlException;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\proxies\AdvancedRobotProxy.java:20: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessController;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\ClassFileReader.java:22: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessController;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityManager.java:15: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessControlException;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\SecureInputStream.java:13: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessController;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:09] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\ThreadManager.java:23: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:09] [javac-output-25664] import java.security.AccessController;
+[2023-03-29 12:24:09] [javac-output-25664]                     ^
+[2023-03-29 12:24:11] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobotThreadManager.java:49: warning: [removal] destroy() in ThreadGroup has been deprecated and marked for removal
+[2023-03-29 12:24:11] [javac-output-25664] 					runThreadGroup.destroy();
+[2023-03-29 12:24:11] [javac-output-25664] 					              ^
+[2023-03-29 12:24:11] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobotThreadManager.java:61: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:11] [javac-output-25664] 			awtForThreadGroup = AccessController.doPrivileged(new PrivilegedAction<Object>() {
+[2023-03-29 12:24:11] [javac-output-25664] 			                    ^
+[2023-03-29 12:24:11] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\io\RobotFileSystemManager.java:219: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:11] [javac-output-25664] 				throw new java.security.AccessControlException(
+[2023-03-29 12:24:11] [javac-output-25664] 				                       ^
+[2023-03-29 12:24:12] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\JavaHost.java:55: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:12] [javac-output-25664] 			throw new AccessControlException("Unknown robot type");
+[2023-03-29 12:24:12] [javac-output-25664] 			          ^
+[2023-03-29 12:24:12] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\JavaHost.java:126: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:12] [javac-output-25664] 				throw new AccessControlException(
+[2023-03-29 12:24:12] [javac-output-25664] 				          ^
+[2023-03-29 12:24:13] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\proxies\AdvancedRobotProxy.java:202: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:13] [javac-output-25664] 			throw new AccessControlException("no relative path allowed");
+[2023-03-29 12:24:13] [javac-output-25664] 			          ^
+[2023-03-29 12:24:13] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\proxies\AdvancedRobotProxy.java:205: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:13] [javac-output-25664] 		return AccessController.doPrivileged((PrivilegedAction<File>) () -> robotFileSystemManager.getDataFile(filename));
+[2023-03-29 12:24:13] [javac-output-25664] 		       ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\ClassFileReader.java:70: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		return AccessController.doPrivileged(new PrivilegedAction<ByteBuffer>() {
+[2023-03-29 12:24:14] [javac-output-25664] 		       ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityManager.java:25: warning: [removal] SecurityManager in java.lang has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] public class RobocodeSecurityManager extends SecurityManager {
+[2023-03-29 12:24:14] [javac-output-25664]                                              ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityManager.java:41: warning: [removal] setSecurityManager(SecurityManager) in System has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		System.setSecurityManager(this);
+[2023-03-29 12:24:14] [javac-output-25664] 		      ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityManager.java:69: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 			} catch (AccessControlException e) {
+[2023-03-29 12:24:14] [javac-output-25664] 			         ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityManager.java:109: warning: [removal] AccessControlException in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 			throw new AccessControlException("Preventing " + c.getName() + " from access to " + g.getName());			
+[2023-03-29 12:24:14] [javac-output-25664] 			          ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityPolicy.java:31: warning: [removal] Policy in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] public class RobocodeSecurityPolicy extends Policy {
+[2023-03-29 12:24:14] [javac-output-25664]                                             ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityPolicy.java:37: warning: [removal] Policy in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 	private final Policy parentPolicy;
+[2023-03-29 12:24:14] [javac-output-25664] 	              ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityPolicy.java:43: warning: [removal] Policy in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		this.parentPolicy = Policy.getPolicy();
+[2023-03-29 12:24:14] [javac-output-25664] 		                    ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityPolicy.java:58: warning: [removal] Policy in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		Policy.setPolicy(this);
+[2023-03-29 12:24:14] [javac-output-25664] 		^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityPolicy.java:74: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		return AccessController.doPrivileged((PrivilegedAction<PermissionCollection>) () -> parentPolicy.getPermissions(codeSource));
+[2023-03-29 12:24:14] [javac-output-25664] 		       ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobocodeSecurityPolicy.java:85: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		return AccessController.doPrivileged((PrivilegedAction<Boolean>) () -> impliesRobot(permission));
+[2023-03-29 12:24:14] [javac-output-25664] 		       ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\RobotClassLoader.java:153: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		return AccessController.doPrivileged(new PrivilegedAction<ByteBuffer>() {
+[2023-03-29 12:24:14] [javac-output-25664] 		       ^
+[2023-03-29 12:24:14] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\SecureInputStream.java:41: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:14] [javac-output-25664] 		AccessController.checkPermission(inputPermission);
+[2023-03-29 12:24:14] [javac-output-25664] 		^
+[2023-03-29 12:24:15] [javac-output-25664] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.host\src\main\java\net\sf\robocode\host\security\ThreadManager.java:138: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:24:15] [javac-output-25664] 			AccessController.doPrivileged(new PrivilegedAction<Object>() {
+[2023-03-29 12:24:15] [javac-output-25664] 			^

@@ -1,0 +1,7 @@
+[2023-03-29 12:25:24] [javac-output-15296] warning: [options] bootstrap class path not set in conjunction with -source 8
+[2023-03-29 12:25:35] [javac-output-15296] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.ui.editor\src\main\java\net\sf\robocode\ui\editor\LineHighlighter.java:54: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+[2023-03-29 12:25:35] [javac-output-15296] 			c.putClientProperty(PREVIOUS_CARET, new Integer(c.getCaretPosition()));
+[2023-03-29 12:25:35] [javac-output-15296] 			                                    ^
+[2023-03-29 12:25:35] [javac-output-15296] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.ui.editor\src\main\java\net\sf\robocode\ui\editor\LineHighlighter.java:86: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+[2023-03-29 12:25:35] [javac-output-15296] 			c.putClientProperty(PREVIOUS_CARET, new Integer(actualCaretPosition));
+[2023-03-29 12:25:35] [javac-output-15296] 			                                    ^

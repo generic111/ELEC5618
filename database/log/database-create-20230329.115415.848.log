@@ -1,0 +1,399 @@
+[2023-03-29 11:54:15] This is codeql database create C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master/database --language=java
+[2023-03-29 11:54:15] Log file was started late.
+[2023-03-29 11:54:15] [PROGRESS] database create> Initializing database at C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\database.
+[2023-03-29 11:54:15] Running plumbing command: codeql database init --language=java --qlconfig-file=C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\qlconfig.yml --source-root=C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master --allow-missing-source-root=false --allow-already-existing -- C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\database
+[2023-03-29 11:54:15] Calling plumbing command: codeql resolve languages --format=json
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from C:\Users\eric\Downloads\codeql-win64\codeql\.codeqlmanifest.json
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\cpp\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\csharp\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\csv\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\go\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\html\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\java\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\javascript\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\properties\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\python\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\ruby\codeql-extractor.yml.
+[2023-03-29 11:54:16] [DETAILS] resolve languages> Parsing C:\Users\eric\Downloads\codeql-win64\codeql\xml\codeql-extractor.yml.
+[2023-03-29 11:54:16] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "cpp" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\cpp"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction.",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "cil" : {
+                                  "title" : "Whether to enable CIL extraction.",
+                                  "description" : "A value indicating, whether CIL extraction should be enabled. The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\csv"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\go"
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\javascript",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\properties"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\python"
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "C:\\Users\\eric\\Downloads\\codeql-win64\\codeql\\xml"
+                            }
+                          ]
+                        }
+                      }
+[2023-03-29 11:54:16] [PROGRESS] database init> Calculating baseline information in C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master
+[2023-03-29 11:54:16] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2023-03-29 11:54:16] [DETAILS] database init> Running command in C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master: C:\Users\eric\Downloads\codeql-win64\codeql\tools\win64\scc.exe --by-file --exclude-dir .git,.hg,.svn --format json .
+[2023-03-29 11:54:16] [SPAMMY] database init> Found 640 baseline files for java.
+[2023-03-29 11:54:16] [PROGRESS] database init> Calculated baseline information for languages: java (188ms).
+[2023-03-29 11:54:16] [PROGRESS] database init> Resolving extractor java.
+[2023-03-29 11:54:16] [DETAILS] database init> Found candidate extractor root for java: C:\Users\eric\Downloads\codeql-win64\codeql\java.
+[2023-03-29 11:54:16] [PROGRESS] database init> Successfully loaded extractor Java (java) from C:\Users\eric\Downloads\codeql-win64\codeql\java.
+[2023-03-29 11:54:16] [PROGRESS] database init> Created skeleton CodeQL database at C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\database. This in-progress database is ready to be populated by an extractor.
+[2023-03-29 11:54:16] Plumbing command codeql database init completed.
+[2023-03-29 11:54:16] Using autobuild script C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd.
+[2023-03-29 11:54:16] [DETAILS] database create> Detected autobuild command for Java: C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd.
+[2023-03-29 11:54:16] [PROGRESS] database create> Running build command: [C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd]
+[2023-03-29 11:54:16] Running plumbing command: codeql database trace-command --working-dir=C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master --index-traceless-dbs --no-db-cluster -- C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\database C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd
+[2023-03-29 11:54:16] [PROGRESS] database trace-command> Running command in C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master: [C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd]
+[2023-03-29 11:54:18] [build-stdout] [2023-03-29 11:54:18] Build directory is C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\.
+[2023-03-29 11:54:18] [build-stdout] [2023-03-29 11:54:18] [autobuild] > gradlew.bat --no-daemon -S -Dorg.gradle.dependency.verification=off --init-script "C:\\Users\\eric\\AppData\\Local\\Temp\\semmleTempDir-1\\init.gradle" clean
+[2023-03-29 11:54:19] [build-stdout] [2023-03-29 11:54:19] [autobuild] To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/6.8.2/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+[2023-03-29 11:54:21] [build-stdout] [2023-03-29 11:54:21] [autobuild] Daemon will be stopped at the end of the build 
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] FAILURE: Build failed with an exception.
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] * Where:
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] Initialization script 'C:\Users\eric\AppData\Local\Temp\semmleTempDir-1\init.gradle'
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] * What went wrong:
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] Could not compile initialization script 'C:\Users\eric\AppData\Local\Temp\semmleTempDir-1\init.gradle'.
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] > startup failed:
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   General error during semantic analysis: Unsupported class file major version 61
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   java.lang.IllegalArgumentException: Unsupported class file major version 61
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:196)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:177)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:163)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:284)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.AsmDecompiler.parseClass(AsmDecompiler.java:81)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.ClassNodeResolver.findDecompiled(ClassNodeResolver.java:251)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.ClassNodeResolver.tryAsLoaderClassOrScript(ClassNodeResolver.java:189)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.ClassNodeResolver.findClassNode(ClassNodeResolver.java:169)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.ClassNodeResolver.resolveName(ClassNodeResolver.java:125)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveClassNullable(AsmReferenceResolver.java:57)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveClass(AsmReferenceResolver.java:44)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveNonArrayType(AsmReferenceResolver.java:79)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveType(AsmReferenceResolver.java:70)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.MemberSignatureParser.createMethodNode(MemberSignatureParser.java:57)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode$2.get(DecompiledClassNode.java:234)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode$2.get(DecompiledClassNode.java:231)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode.createMethodNode(DecompiledClassNode.java:242)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode.lazyInitMembers(DecompiledClassNode.java:199)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode.getDeclaredMethods(DecompiledClassNode.java:122)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassNode.getMethods(ClassNode.java:912)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassNode.tryFindPossibleMethod(ClassNode.java:1280)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.StaticImportVisitor.transformMethodCallExpression(StaticImportVisitor.java:252)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.StaticImportVisitor.transform(StaticImportVisitor.java:113)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassCodeExpressionTransformer.visitExpressionStatement(ClassCodeExpressionTransformer.java:142)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.stmt.ExpressionStatement.visit(ExpressionStatement.java:40)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitClassCodeContainer(ClassCodeVisitorSupport.java:110)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitConstructorOrMethod(ClassCodeVisitorSupport.java:121)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassCodeExpressionTransformer.visitConstructorOrMethod(ClassCodeExpressionTransformer.java:53)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.StaticImportVisitor.visitConstructorOrMethod(StaticImportVisitor.java:89)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitConstructor(ClassCodeVisitorSupport.java:128)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassNode.visitContents(ClassNode.java:1099)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitClass(ClassCodeVisitorSupport.java:54)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.StaticImportVisitor.visitClass(StaticImportVisitor.java:83)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.CompilationUnit$14.call(CompilationUnit.java:708)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1084)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:640)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:618)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:595)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:401)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovy.lang.GroovyClassLoader.access$300(GroovyClassLoader.java:89)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:341)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:338)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:147)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:336)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:139)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:95)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler$2.run(BuildOperationBackedScriptCompilationHandler.java:54)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler.compileToDir(BuildOperationBackedScriptCompilationHandler.java:51)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:190)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:170)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:211)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:194)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultPersistentDirectoryCache$Initializer.initialize(DefaultPersistentDirectoryCache.java:100)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.FixedSharedModeCrossProcessCacheAccess$1.run(FixedSharedModeCrossProcessCacheAccess.java:86)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.doWriteAction(DefaultFileLockManager.java:215)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.writeFile(DefaultFileLockManager.java:205)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.FixedSharedModeCrossProcessCacheAccess.open(FixedSharedModeCrossProcessCacheAccess.java:83)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultCacheAccess.open(DefaultCacheAccess.java:139)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:89)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:43)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:103)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.cache.internal.DefaultCacheRepository$PersistentCacheBuilder.open(DefaultCacheRepository.java:126)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler.compile(FileCacheBackedScriptClassCompiler.java:116)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.CrossBuildInMemoryCachingScriptClassCache.getOrCompile(CrossBuildInMemoryCachingScriptClassCache.java:50)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.internal.BuildScopeInMemoryCachingScriptClassCompiler.compile(BuildScopeInMemoryCachingScriptClassCompiler.java:50)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.groovy.scripts.DefaultScriptCompilerFactory$ScriptCompilerImpl.compile(DefaultScriptCompilerFactory.java:49)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:125)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:65)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:62)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.configuration.internal.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:43)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:62)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.configuration.DefaultInitScriptProcessor.process(DefaultInitScriptProcessor.java:50)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.InitScriptHandler$1.run(InitScriptHandler.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.InitScriptHandler.executeScripts(InitScriptHandler.java:51)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.DefaultSettingsPreparer.prepareSettings(DefaultSettingsPreparer.java:33)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.doLoadBuild(BuildOperationFiringSettingsPreparer.java:62)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.run(BuildOperationFiringSettingsPreparer.java:57)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.BuildOperationFiringSettingsPreparer.prepareSettings(BuildOperationFiringSettingsPreparer.java:45)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.DefaultGradleLauncher.prepareSettings(DefaultGradleLauncher.java:218)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.DefaultGradleLauncher.doClassicBuildStages(DefaultGradleLauncher.java:159)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:148)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:124)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:72)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:67)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:63)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:77)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:54)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:53)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:49)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:32)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:27)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:55)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:41)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:65)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:78)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.util.Swapper.swap(Swapper.java:38)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:50)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild]   1 error
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] * Try:
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] * Exception is:
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] org.gradle.groovy.scripts.ScriptCompilationException: Could not compile initialization script 'C:\Users\eric\AppData\Local\Temp\semmleTempDir-1\init.gradle'.
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.wrapCompilationFailure(DefaultScriptCompilationHandler.java:192)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:141)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:95)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler$2.run(BuildOperationBackedScriptCompilationHandler.java:54)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler.compileToDir(BuildOperationBackedScriptCompilationHandler.java:51)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:190)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:170)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:211)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [autobuild] 	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:194)
+[2023-03-29 11:54:23] [build-stdout] [2023-03-29 11:54:23] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Users\eric\Downloads\codeql-win64\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, gradlew.bat, --no-daemon, -S, -Dorg.gradle.dependency.verification=off, --init-script, C:\Users\eric\AppData\Local\Temp\semmleTempDir-1\init.gradle, clean])
+[2023-03-29 11:54:23] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Users\eric\Downloads\codeql-win64\codeql\tools\win64\tracer.exe, C:\Users\eric\Downloads\codeql-win64\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd])
+[2023-03-29 11:54:23] Exception caught at top level: Exit status 1 from command: [C:\Users\eric\Downloads\codeql-win64\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\eric\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd]
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:229)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:87)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:671)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:435)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:670)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:109)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:208)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:151)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:671)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:435)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:670)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:591)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:225)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:234)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:100)

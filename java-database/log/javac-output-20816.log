@@ -1,0 +1,7 @@
+[2023-03-29 12:23:51] [javac-output-20816] warning: [options] bootstrap class path not set in conjunction with -source 8
+[2023-03-29 12:23:52] [javac-output-20816] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.core\src\main\java\net\sf\robocode\core\EngineClassLoader.java:13: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:23:52] [javac-output-20816] import java.security.AccessController;
+[2023-03-29 12:23:52] [javac-output-20816]                     ^
+[2023-03-29 12:23:56] [javac-output-20816] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.core\src\main\java\net\sf\robocode\core\EngineClassLoader.java:86: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+[2023-03-29 12:23:56] [javac-output-20816] 			return AccessController.doPrivileged(new PrivilegedAction<Boolean>() {
+[2023-03-29 12:23:56] [javac-output-20816] 			       ^

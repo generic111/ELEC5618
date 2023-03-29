@@ -1,0 +1,35 @@
+---
+sourceLocationPrefix: C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master
+baselineLinesOfCode: 55822
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+inProgress:
+  primaryLanguage: java
+  installedExtractors:
+    cpp:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/cpp
+    csharp:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/csharp
+    csv:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/csv
+    go:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/go
+    html:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/html
+    java:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/java
+    javascript:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/javascript
+    properties:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/properties
+    python:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/python
+    ruby:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/ruby
+    xml:
+     - C:/Users/eric/Downloads/codeql-win64/codeql/xml
+creationMetadata:
+  cliVersion: 2.12.5
+  creationTime: 2023-03-29T00:54:16.710948300Z
+finalised: false

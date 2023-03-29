@@ -1,0 +1,4 @@
+[2023-03-29 12:23:05] [javac-output-12836] warning: [options] bootstrap class path not set in conjunction with -source 8
+[2023-03-29 12:23:24] [javac-output-12836] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.api\src\main\java\robocode\control\RobocodeEngine.java:318: warning: [removal] isDaemon() in ThreadGroup has been deprecated and marked for removal
+[2023-03-29 12:23:24] [javac-output-12836] 			if (currentGroup.isDaemon()) {
+[2023-03-29 12:23:24] [javac-output-12836] 			                ^

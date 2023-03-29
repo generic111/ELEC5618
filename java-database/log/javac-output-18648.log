@@ -1,0 +1,7 @@
+[2023-03-29 12:25:02] [javac-output-18648] warning: [options] bootstrap class path not set in conjunction with -source 8
+[2023-03-29 12:25:14] [javac-output-18648] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.ui\src\main\java\net\sf\robocode\ui\dialog\PreferencesViewOptionsTab.java:189: warning: [removal] Integer(String) in Integer has been deprecated and marked for removal
+[2023-03-29 12:25:14] [javac-output-18648] 						inputTps = new Integer(text);
+[2023-03-29 12:25:14] [javac-output-18648] 						           ^
+[2023-03-29 12:25:17] [javac-output-18648] C:\Users\eric\Desktop\ELEC5618\robocode-master\robocode-master\robocode.ui\src\main\java\net\sf\robocode\ui\WindowManager.java:594: warning: [removal] Double(String) in Double has been deprecated and marked for removal
+[2023-03-29 12:25:17] [javac-output-18648] 		if (new Double(System.getProperty("java.specification.version")) >= 1.6) {
+[2023-03-29 12:25:17] [javac-output-18648] 		    ^
